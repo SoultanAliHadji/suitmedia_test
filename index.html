@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>front-end starter kit</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">Company</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropbtn">About</button>
+                  <div class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Vission Mission</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Our Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Our Team</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/bg.jpg" class="d-block w-100" alt="bg">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="corousel-title">
+                <h3>THIS IS A PLACE WHERE TECHNOLOGY &</h3>
+                <h3>CREATIVITY FUSED INTODIGITAL CHEMISTRY</h3>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/about-bg.jpg" class="d-block w-100" alt="about-bg">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="corousel-title">
+                <h3>WE DON'T HAVE THE BEST BUT WE HAVE THE</h3>
+                <h3>GREATEST TEAM</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="container-md">
+      <div class="title">
+        <h4>OUR VALUES</h4>
+      </div>
+      <div class="collumn">
+        <div class="container">
+          <div class="row">
+            <div class="col col1">
+              <div class="content content1">
+                <img src="asset/lightbulb-o.png" alt="lightbulb-o">
+                <h5 class="img-title">INNOVATIVE</h5>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  <p>adipising elit. Maxime exercitationem</p>
+                  <p>dolorem deserunt, unde, eaque ipsa?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col2">
+              <div class="content content2">
+                <img src="asset/bank.png" alt="bank">
+                <h5 class="img-title">LOYALTY</h5>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  <p>adipisicing elit. Impedit similique eum itaque</p>
+                  <p>facere temporibus dolores</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col3">
+              <div class="content content3">
+                <img src="asset/balance-scale.png" alt="">
+                <h5 class="img-title">RESPECT</h5>
+                <div class="text">
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  <p>adipisicing elit. onsequatur, sit? Tenetur et</p>
+                  <p>neque quod incidunt!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message">
+        <div class="title">
+          <h4>CONTACT US</h4>
+        </div>
+        <div class="message-input">
+          <div id="error"></div>
+          <form id="form" action="" method="GET">
+            <p>Nama</p>
+            <input id="nama" name="nama" type="text">
+            <br>
+            <label id="labelNama"></label>
+            <br>
+            <p class="message-email">Email</p>
+            <input id="email" name="email" type="email">
+            <br>
+            <label id="labelEmail"></label>
+            <br>
+            <p class="message-message">Message</p>
+            <textarea name="textareaMessage" id="textareaMessage" cols="30" rows="10"></textarea>
+            <br>
+            <label id="labelTextareaMessage"></label>
+            <br>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>Copyright © 2016. PT Company</p>
+      </div>
+      <img src="asset/facebook-official.png" alt="facebook">
+      <img src="asset/twitter.png" alt="twitter">
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
